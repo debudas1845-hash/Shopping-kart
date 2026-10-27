@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CTMC Fashion Store</title>
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            background-color: #f4f4f4;
+        }
+
+        /* HEADER */
+
+        .header {
+            min-height: 70px;
+            width: 100%;
+
+            background-color: white;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            padding: 0 25px;
+
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.35);
+        }
+
+        .logo {
+            font-size: 25px;
+            font-weight: bold;
+            font-style: italic;
+            letter-spacing: 8px;
+        }
+
+        .navbar {
+            display: flex;
+            gap: 25px;
+        }
+
+        .navbar a {
+            text-decoration: none;
+            color: #4b206d;
+
+            font-size: 18px;
+            font-family: "Times New Roman", serif;
+
+            transition: 0.3s;
+        }
+
+        .navbar a:hover {
+            color: red;
+        }
+
+
+        /* MAIN CONTENT */
+
+        .main-content {
+            flex: 1;
+            padding: 40px 30px;
+        }
+
+        .main-content h1 {
+            text-align: center;
+            color: #222;
+            margin-bottom: 30px;
+        }
+
+
+
+        .product-container {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            flex-wrap: wrap;
+        }
+
+
+        .product-card {
+            width: 220px;
+
+            background-color: white;
+
+            border-radius: 15px;
+
+            padding: 15px;
+
+            text-align: center;
+
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
+
+            transition: 0.3s;
+        }
+
+        .product-card:hover {
+            transform: translateY(-10px);
+
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35);
+        }
+
+
+
+        .product-card img {
+            width: 100%;
+            height: 230px;
+
+            object-fit:;
+
+            border-radius: 10px;
+        }
+
+
+
+        .product-card h2 {
+            font-size: 20px;
+            margin-top: 12px;
+        }
+
+
+
+        .product-card p {
+            font-size: 18px;
+
+            color: #e63946;
+
+            font-weight: bold;
+
+            margin-top: 10px;
+        }
+
+
+
+        .footer {
+            min-height: 90px;
+
+            background-color: black;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+        }
+
+        .footer p {
+            color: red;
+
+            font-size: 22px;
+
+            font-family: "Times New Roman", serif;
+        }
+
+
+
+        @media (max-width: 700px) {
+
+            .header {
+                flex-direction: column;
+                gap: 15px;
+                padding: 15px;
+            }
+
+            .navbar {
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 15px;
+            }
+
+            .navbar a {
+                font-size: 15px;
+            }
+
+            .main-content {
+                padding: 30px 15px;
+            }
+
+        }
+
+        button{
+            font-family: algerian;
+            width: 150px;
+            height: 30px;
+            border: none;
+            border-radius: 30px;
+            background-color: #98dae5;
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+
+    <header class="header">
+
+        <div class="logo">
+            
+        </div>
+
+
+        <nav class="navbar">
+
+            <a href="https://www.youtube.com/" target="_blank">
+                YOUTUBE
+            </a>
+
+            <a href="https://www.flipkart.com/" target="_blank">
+                FLIPKART
+            </a>
+
+            <a href="https://www.instagram.com/" target="_blank">
+                INSTAGRAM
+            </a>
+
+            <a href="https://www.amazon.com/" target="_blank">
+                AMAZON
+            </a>
+
+        </nav>
+
+    </header>
+
+        <main class="main-content">
+
+        <h1>
+            👕 SELL IS LIFE 👖
+        </h1>
+
+
+        <div class="product-container">
+
+
+
+            <div class="product-card">
+
+                <img
+                    src="https://images.unsplash.com/photo-1603252110481-7ba873bf42ab?auto=format&fit=crop&w=500&q=80"
+                    alt="White Shirt">
+
+                <h2>
+                    White Shirt
+                </h2>
+
+                <p>
+                    ₹799
+                </p>
+                <button>Add to card</button>
+
+            </div>
+
+
+            <!-- PRODUCT 2 -->
+
+            <div class="product-card">
+
+                <img
+                    src="https://rukminim2.flixcart.com/image/612/612/xif0q/shirt/s/e/r/xl-fk-navy-narrow-yellow-dash-original-imahkr7ry8afckwj.jpeg?q=70"
+                    alt="Blue Shirt">
+
+                <h2>
+                    Blue Shirt
+                </h2>
+
+                <p>
+                    ₹899
+                </p>
+
+            </div>
+
+
+            <!-- PRODUCT 3 -->
+
+            <div class="product-card">
+
+                <img
+                    src="https://images.unsplash.com/photo-1610652492500-ded49ceeb378?auto=format&fit=crop&w=500&q=80"
+                    alt="Black Pant">
+
+                <h2>
+                    Black Pant
+                </h2>
+
+                <p>
+                    ₹999
+                </p>
+
+            </div>
+
+
+            <!-- PRODUCT 4 -->
+
+            <div class="product-card">
+
+                <img
+                    src="https://images.unsplash.com/photo-1624378439575-d8705ad7ae80?auto=format&fit=crop&w=500&q=80"
+                    alt="Denim Jeans">
+
+                <h2>
+                    Denim Jeans
+                </h2>
+
+                <p>
+                    ₹1,199
+                </p>
+
+            </div>
+
+
+            <!-- PRODUCT 5 -->
+
+            <div class="product-card">
+
+                <img
+                    src="https://images.unsplash.com/photo-1551488831-00ddcb6c6bd3?auto=format&fit=crop&w=500&q=80"
+                    alt="Casual Shirt">
+
+                <h2>
+                    Casual Shirt
+                </h2>
+
+                <p>
+                    ₹699
+                </p>
+
+            </div>
+
+            <!--PRODUCT 6-->
+            <div class="product-card">
+                <img src="https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/q/x/x/-original-imahqvadj2sps3vz.jpeg?q=70" alt="i phone 17">
+
+                <h2>I PHONE 17</h2>
+                <p>₹ 86999</p>
+            </div>
+
+        </div>
+
+    </main>
+
+
+
+    <!-- FOOTER -->
+
+    <footer class="footer">
+
+        <p>
+            @ Developed Sudipta Mandal
+        </p>
+
+    </footer>
+
+
+</body>
+
+</html>
